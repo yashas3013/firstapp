@@ -31,11 +31,16 @@ Apk file is also present in build\app\outputs\flutter-apk\app-release.apk
 
 ## How to use the App:
 * First install it from the link given above.
-* Run it, give necessary permissions to Google Drive.
+* Run it, give necessary permissions to *Google Drive*.
 * Click on Open when the app installs.
-* The app interface will have "Get Location" button.
+* The app interface will have **"Get Location"** button.
 * Click on it.
-* Then click on Find Spots.
+* Then click on **Find Spots**.
 * The app will get the parking spots from the database, hence click on the three location provided(any of the three).
 * You will be redirected to Google maps with coordinate of parking lot loaded.
 * Just get directions and you can drive to it.
+
+## Note:
+As this is just a prototype, we have added a few parking spots in Navi Mumbai, hence it will take you only there.
+Even the **"I have parked here"** button is usable only by one of our team members as you need to be near the parking spot for lodging into database.
+Once we expand this, anyone can find parking spot nearby.
