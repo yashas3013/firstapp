@@ -28,3 +28,14 @@ The database will contain all the parking spots[location coordinates of area ext
 ### APK link
 https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=sharing
 Apk file is also present in build\app\outputs\flutter-apk\app-release.apk
+
+## How to use the App:
+* First install it from the link given above.
+* Run it, give necessary permissions to Google Drive.
+* Click on Open when the app installs.
+* The app interface will have "Get Location" button.
+* Click on it.
+* Then click on Find Spots.
+* The app will get the parking spots from the database, hence click on the three location provided(any of the three).
+* You will be redirected to Google maps with coordinate of parking lot loaded.
+* Just get directions and you can drive to it.
