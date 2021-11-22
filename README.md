@@ -32,6 +32,9 @@ https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=shari
 ## How to use the App:
 * First install it from the link given above.
 * Run it, give necessary permissions to *Google Drive*.
+
+
+
 * Click on Open when the app installs.
 * The app interface will have **"Get Location"** button.
 * Click on it.
@@ -44,3 +47,8 @@ https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=shari
 As this is just a prototype, we have added a few parking spots in Navi Mumbai, hence it will take you only there.
 Even the **"I have parked here"** button is usable only by one of our team members as you need to be near the parking spot for lodging into database.
 Once we expand this, anyone can find parking spot nearby.
+
+### Images:
+![Home_Screen](https://user-images.githubusercontent.com/92041385/142833844-09363316-643f-48cb-81e7-83f50a6f6fac.jpeg)
+![Redirect_to_Gmaps](https://user-images.githubusercontent.com/92041385/142833906-fe35c46f-7d4e-4544-948e-92523a559b80.jpeg)
+
