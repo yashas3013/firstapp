@@ -137,6 +137,7 @@ class _HomepageState extends State<Homepage> {
           if (top >= position.latitude && position.latitude >= bottom) {
             print(1);
             if (left <= right && left<=position.latitude&& position.longitude<=right){
+              print(1);
               var k = data[i][5];
               data[i][5] = k+1;
               update(pincode, i, data);
@@ -159,8 +160,9 @@ class _HomepageState extends State<Homepage> {
   Future<void> GetAddressFromLatLong(Position position)async {
     List<Placemark> placemarks = await placemarkFromCoordinates(position.latitude, position.longitude);
     getData();
+    String pincode = '400706'; //For testing purpose this pincode for navimumbai only as we have database of parking spots in navi mumbai only
     Placemark place = placemarks[0];
-    String pincode = place.postalCode.toString();
+    // String pincode = place.postalCode(); //this line would used instead of line 164.
     FirebaseFirestore.instance
     .collection('parking')
     .doc(pincode)
@@ -210,31 +212,39 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: const Text('ParkAssist',style: TextStyle(fontSize: 30,fontWeight: FontWeight.bold,letterSpacing: 2.0))),
+      appBar: AppBar(title: const Text('ParkAssist'),),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             Container(
-        child: new Text('Location 1',style: TextStyle(fontSize: 25,letterSpacing: 2.0,decoration: TextDecoration.underline,color: Colors.blue)),
+                child: new InkWell(
+                    child: new Text('Location 1'),
+                    onTap: () => launch(location1),
+                )
             ),
-        Container(
-          child: new Text('Location 2',style: TextStyle(fontSize: 25,letterSpacing: 2.0,decoration: TextDecoration.underline,color: Colors.blue)),
-
-        ),
             Container(
-                child: new Text('Location 3',style: TextStyle(fontSize: 25,letterSpacing: 2.0,decoration: TextDecoration.underline,color: Colors.blue)),
-
+                child: new InkWell(
+                  child: new Text('Location 2'),
+                  onTap: () => launch(location2),
+                )
+            ),
+            Container(
+                child: new InkWell(
+                  child: new Text('Location 3'),
+                  onTap: () => launch(location3),
+                )
             ),
             ElevatedButton(onPressed: () async{
               Position position = await _getGeoLocationPosition();
-              // location ='Lat: ${position.latitude} , Long: ${position.longitude}';
+              // location ='Lat: ${position.latitude} , Long: ${position.longitude}';\
+              // getData();
               GetAddressFromLatLong(position);
-            }, child: Text('Get Location', style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold, letterSpacing: 2.0, color: Colors.black) ),),
+            }, child: Text('Get Location')),
             ElevatedButton(onPressed: () async{
               Position position = await _getGeoLocationPosition();
               Check_location(position);
-            }, child: Text('I have parked here',style: TextStyle(fontSize: 30.0, fontWeight: FontWeight.bold, letterSpacing: 2.0, color: Colors.red[600]) ),)
+            }, child: Text('I have parked here')),
           ],
         ),
       ),
