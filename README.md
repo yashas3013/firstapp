@@ -26,5 +26,5 @@ The database will contain all the parking spots[location coordinates of area ext
 * Once the user clicks on one of the location options he will redirected to google maps app for the directions
  
 ### APK link
-https://drive.google.com/file/d/1aL3K1HwDNA6durwsSt_6RX93pjnEiobw/view?usp=sharing
+https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=sharing
 Apk file is also present in build\app\outputs\flutter-apk\app-release.apk
