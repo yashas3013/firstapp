@@ -46,7 +46,7 @@ https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=shari
 ## Note:
 As this is just a prototype, we have added a few parking spots in Navi Mumbai, hence it will take you only there.
 Even the **"I have parked here"** button is usable only by one of our team members as you need to be near the parking spot for lodging into database.
-Once we expand this, anyone can find parking spot nearby.
+Once we expand this feature in the bigger model, anyone can find parking spot nearby and log occupied/not occupied into our database.
 
 ### Images:
 **Home Screen:**
