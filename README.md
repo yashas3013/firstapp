@@ -50,7 +50,10 @@ Once we expand this, anyone can find parking spot nearby.
 
 ### Images:
 **Home Screen:**
+
 ![Home_Screen](https://user-images.githubusercontent.com/92041385/142833844-09363316-643f-48cb-81e7-83f50a6f6fac.jpeg)
+
 **Redirect to Gmaps:**
+
 ![Redirect_to_Gmaps](https://user-images.githubusercontent.com/92041385/142833906-fe35c46f-7d4e-4544-948e-92523a559b80.jpeg)
 
