@@ -172,10 +172,7 @@ class _HomepageState extends State<Homepage> {
         Map<String, dynamic> data = documentSnapshot.data()! as Map<
             String,
             dynamic>;
-        // print(data);
         var arr = [];
-        // GeoPoint lat2 = data['001'][0];
-        // print(lat2.)
         var map_cord = new Map();
         for (String i in data.keys) {
           if (data[i][5] != data[i][6]) {
@@ -190,12 +187,6 @@ class _HomepageState extends State<Homepage> {
        arr.sort();
         print(position.latitude);
         print(position.longitude);
-        // print(map_cord[arr[0]]);
-        // print(arr[0]);
-        // print(map_cord[arr[1]]);
-        // print(arr[1]);
-        // print(map_cord[arr[2]]);
-        // print(arr[2]);
         location2  = 'https://www.google.com/maps/search/?api=1&query=${map_cord[arr[1]][0]}%2C${map_cord[arr[1]][1]}';
         location3  = 'https://www.google.com/maps/search/?api=1&query=${map_cord[arr[2]][0]}%2C${map_cord[arr[2]][1]}';
         location1  = 'https://www.google.com/maps/search/?api=1&query=${map_cord[arr[0]][0]}%2C${map_cord[arr[0]][1]}';
@@ -219,33 +210,38 @@ class _HomepageState extends State<Homepage> {
           children: [
             Container(
                 child: new InkWell(
-                    child: new Text('Location 1'),
+                    child: new Text('Location 1',style: TextStyle(letterSpacing: 1.0,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,color: Colors.blue)),
                     onTap: () => launch(location1),
                 )
             ),
             Container(
                 child: new InkWell(
-                  child: new Text('Location 2'),
+                  child: new Text('Location 2',style: TextStyle(letterSpacing: 1.0,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,color: Colors.blue)),
                   onTap: () => launch(location2),
                 )
             ),
             Container(
                 child: new InkWell(
-                  child: new Text('Location 3'),
+                  child: new Text('Location 3',style: TextStyle(letterSpacing: 1.0,fontWeight: FontWeight.bold,decoration: TextDecoration.underline,color: Colors.blue)),
                   onTap: () => launch(location3),
                 )
             ),
+
+            ElevatedButton(onPressed: () async{
+              Position position = await _getGeoLocationPosition();
+              GetAddressFromLatLong(position);
+            }, child: Text('Get Location')),
             ElevatedButton(onPressed: () async{
               Position position = await _getGeoLocationPosition();
               // location ='Lat: ${position.latitude} , Long: ${position.longitude}';\
               // getData();
               GetAddressFromLatLong(position);
-            }, child: Text('Get Location')),
+            }, child: Text('Find spots')),
             ElevatedButton(onPressed: () async{
               Position position = await _getGeoLocationPosition();
               Check_location(position);
             }, child: Text('I have parked here')),
-          ],
+    ],
         ),
       ),
     );
