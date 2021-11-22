@@ -27,7 +27,7 @@ The database will contain all the parking spots[location coordinates of area ext
  
 ### APK link
 https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=sharing
-Apk file is also present in build\app\outputs\flutter-apk\app-release.apk
+
 
 ## How to use the App:
 * First install it from the link given above.
