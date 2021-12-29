@@ -25,9 +25,6 @@ The database will contain all the parking spots[location coordinates of area ext
 * In a larger model, we will be using android auto/apple carplay to exactly determine if car has stopped and hence parking data will be even more accurate.
 * Once the user clicks on one of the location options he will redirected to google maps app for the directions
  
-### APK link
-https://drive.google.com/file/d/1mUpGJ9WXylANbtMlxk0AQdXpl7KjUSYb/view?usp=sharing
-
 
 ## How to use the App:
 * First install it from the link given above.
