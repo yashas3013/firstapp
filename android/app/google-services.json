@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087018319920",
+    "firebase_url": "https://parkassit-6e75b-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "parkassit-6e75b",
+    "storage_bucket": "parkassit-6e75b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087018319920:android:b719285e29c3e3fcf66df5",
+        "android_client_info": {
+          "package_name": "com.example.parkassisit"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087018319920-4m6svoscnjjir2lh1ls1f7e2n8kgu85g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqeQ2dLpmHEyUUl1rSgrg47Llg3CTqQvs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087018319920-4m6svoscnjjir2lh1ls1f7e2n8kgu85g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
